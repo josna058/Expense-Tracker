@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Expense Tracker Dashboard</h1>
+
+    <input type="text" id="title" placeholder="Expense Title">
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="addExpense()">
+        Add Expense
+    </button>
+
+    <table border="1">
+
+        <thead>
+            <tr>
+                <th>Expense</th>
+                <th>Amount</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="expenseTable">
+
+        </tbody>
+
+    </table>
+
+    <h2>Total Expense : ₹<span id="total">0</span></h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
